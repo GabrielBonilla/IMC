@@ -1,45 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<linearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.joker.receita.MainActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ADD Receita"
+        android:text="ADD"
         android:id="@+id/btnAddRec"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentStart="true" />
 
-    <Button
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listar Receitas"
-        android:id="@+id/btnListar"
+        android:id="@+id/lvReceita"
         android:layout_below="@+id/btnAddRec"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="53dp"
-        android:layout_alignRight="@+id/btnAddRec" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Atualizar Receita"
-        android:id="@+id/btnAtualizar"
-        android:layout_below="@+id/btnAddRec"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/btnAddRec" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Excluir Receita"
-        android:id="@+id/btnExcluir"
-        android:layout_below="@+id/btnListar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/btnListar" />
-</linearLayout>
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

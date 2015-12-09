@@ -22,16 +22,21 @@ public class ReceitaAdapter extends ArrayAdapter<Receita> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         //return super.getView(position, convertView, parent);
-        View linha = LayoutInflater.from(getContext()).inflate(R.layout.linha_adapter_pessoa,null);
+        View linha = LayoutInflater.from(getContext()).inflate(R.layout.activity_add_receit,null);
         TextView txtNome=(TextView) linha.findViewById(R.id.txtNome);
-        TextView txtIdade=(TextView) linha.findViewById(R.id.txtIngrediente1);
-        TextView txtFone = (TextView) linha.findViewById(R.id.txtIng);
+        TextView txtIngrediente1 =(TextView) linha.findViewById(R.id.txtIngrediente1);
+        TextView txtIngrediente2 =(TextView) linha.findViewById(R.id.txtIngrediente2);
+        TextView txtIngrediente3 = (TextView)linha.findViewById(R.id.txtIngrediente3);
+        TextView txtModo = (TextView)linha.findViewById(R.id.txtModo);
 
-        Receita r = getItem(position);
-        txtNome.setText(r.getNome());
-        txtIng.setText(r.getIngrediente1());
-        txtIng2.setText(r.getIngrediente2());
-        txtFone.setText(r.getIngrediente3());
+
+        Receita x = getItem(position);
+        txtNome.setText(x.getNome());
+        txtIngrediente1.setText(x.getIngrediente1());
+        txtIngrediente2.setText(x.getIngrediente2());
+        txtIngrediente3.setText(x.getIngrediente3());
+        txtModo.setText(x.getModoPreparo());
+
         return linha;
 
     }

@@ -21,20 +21,35 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtIng"
-            android:text="50"
+            android:id="@+id/txtIngrediente1"
+            android:text="Ing 3"
             android:textColor="#eb5454"
             android:textSize="20sp"
             android:textStyle="italic" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtFone"
-            android:text="30sp"
+            android:id="@+id/txtIngrediente2"
+            android:text="Ing 2"
             android:textColor="#eb5454"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="italic" />
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtIngrediente3"
+            android:text="Ing 3"
+            android:textColor="#eb5454"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtModo"
+            android:text="Preparo"
+            android:textColor="#eb5454"
+            android:textSize="20sp"
+            android:textStyle="italic" />
 
     </LinearLayout>
 

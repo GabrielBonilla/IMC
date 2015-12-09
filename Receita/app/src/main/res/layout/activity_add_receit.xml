@@ -5,33 +5,40 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.joker.receita.AddReceita">
+    tools:context="com.example.joker.receita.AddReceit">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Nome" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/edtIng1"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/edtNome"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edtNome"
+        android:layout_alignEnd="@+id/edtNome"
         android:text="Primeiro ingrediente" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/edtIng2"
+        android:layout_below="@+id/edtIng1"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/edtIng1"
-        android:text="Segundo ingrediente"
-        android:layout_below="@+id/edtIng1" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADD"
-        android:id="@+id/btnAddI"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Segundo ingrediente" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,7 +46,9 @@
         android:id="@+id/edtIng3"
         android:layout_below="@+id/edtIng2"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/edtIng2"
+        android:layout_alignEnd="@+id/edtIng2"
         android:text="Terceiro ingrediente" />
 
     <EditText
@@ -47,10 +56,20 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:id="@+id/edtDesc"
-        android:text="Modo de preparo"
-        android:layout_above="@+id/btnAddI"
+        android:id="@+id/edtPrep"
+        android:layout_below="@+id/edtIng3"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/edtIng3" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Modo de preparo" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/btnAdd"
+        android:layout_below="@+id/edtPrep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

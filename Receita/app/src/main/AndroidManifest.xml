@@ -17,9 +17,13 @@
         </activity>
         <activity android:name=".AddReceita" >
         </activity>
-        <activity android:name=".ListaRec" >
-        </activity>
         <activity android:name=".ReceitaAdapter" >
+        </activity>
+        <activity android:name=".AddReceit" >
+        </activity>
+        <activity android:name=".MostraRec" >
+        </activity>
+        <activity android:name=".MostraReceita" >
         </activity>
     </application>
 
